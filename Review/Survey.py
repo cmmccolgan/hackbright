@@ -26,4 +26,5 @@ user_college = raw_input ("What college did you go to?")
 #print user_college
 
 print user_name, "likes the color",user_color, \
-"likes to watch", user_movie, "and they like to",user_hobby
+"likes to watch", user_movie, \
+"and they like to",user_hobby
