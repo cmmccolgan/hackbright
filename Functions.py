@@ -53,14 +53,14 @@ def power(num1,exponent):
 def square (num1,exponent):
 	squ_total=num1**2
 	return squ_total
-# #TESTING FUNCTIONS:
-# print "addition 4+5=", addition(4,5)
-# print "subtract 10-5=", subtract(10,5)
-# print "multiply 5*2=", multiply(5,2)
-# print "divide 110/2=", divide(110,2)
-# print "modulo 10*3=", modulo(10,3)
-# print "power 5**5=", power(5,5)
-# print "square 5**2=", square(5,2)
+#TESTING FUNCTIONS:
+print "addition 4+5=", addition(4,5)
+print "subtract 10-5=", subtract(10,5)
+print "multiply 5*2=", multiply(5,2)
+print "divide 110/2=", divide(110,2)
+print "modulo 10*3=", modulo(10,3)
+print "power 5**5=", power(5,5)
+print "square 5**2=", square(5,2)
 
 #8
 print "8a", addition(addition(4,5),subtract(9,6))
