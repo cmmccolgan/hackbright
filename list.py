@@ -19,12 +19,12 @@ Reviewing list lecture
 # print len(my_list)
 
 #EXERCISE 2 ---------------------------------------
-
+'''
 Lists Lecture Exercise.
 This project is a shopping list app.
 We have a global list that will be our shopping list.
 Make sure your code deals with upper and lower case.
-
+'''
 shopping_list = []
 
 def add_shopping_list(item):
