@@ -2,7 +2,7 @@
 Reviewing list lecture
 '''
 
-my_list = [1,2,"kitten",4,"five",6,7]
+#my_list = [1,2,"kitten",4,"five",6,7]
 #EXERCISE 1 ----------------------------------------
 # #1
 # print my_list[2]
@@ -19,12 +19,12 @@ my_list = [1,2,"kitten",4,"five",6,7]
 # print len(my_list)
 
 #EXERCISE 2 ---------------------------------------
-"""
+
 Lists Lecture Exercise.
 This project is a shopping list app.
 We have a global list that will be our shopping list.
 Make sure your code deals with upper and lower case.
-"""
+
 shopping_list = []
 
 def add_shopping_list(item):
@@ -84,5 +84,3 @@ def shopping_time():
 #Required for MAIN program 
 if __name__ == '__main__':
 	shopping_time()
-
-
