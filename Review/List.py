@@ -2,7 +2,7 @@
 Reviewing list lecture
 '''
 
-my_list = [1,2,"kitten",4,"five",6,7]
+#my_list = [1,2,"kitten",4,"five",6,7]
 #EXERCISE 1 ----------------------------------------
 # #1
 # print my_list[2]
@@ -19,12 +19,12 @@ my_list = [1,2,"kitten",4,"five",6,7]
 # print len(my_list)
 
 #EXERCISE 2 ---------------------------------------
-"""
+'''
 Lists Lecture Exercise.
 This project is a shopping list app.
 We have a global list that will be our shopping list.
 Make sure your code deals with upper and lower case.
-
+'''
 shopping_list = []
 
 def add_shopping_list(item):
@@ -68,37 +68,54 @@ def replace_item(old_item, new_item):
     else:
         print "%s is not in the list." % (old_item)
 
+def menu_choice():
+    print "What would you like to do:"
+    print "0 - Main Menu"
+    print "1 - Show Current List"
+    print "2 - Add An Item To Your Shopping List"
+    print "3 - Remove An Item From Your Shopping List"
+    print "4 - Exit Shopping List"
+    #Capture the menu Choice:
+    choice = int(raw_input())
+    return choice
+
 # MAIN Program 
 def shopping_time():
-	#CHECK - add_shopping_list Function
-	add_shopping_list("apple")
-	add_shopping_list("steak")
-	add_shopping_list("beef")
-	add_shopping_list("mustard")
-	#CHECK - remove_item Function
-	remove_item("apple")
-	#CHECK - replace_item Function
-	replace_item("mustard", "ketchup")
+    #CHECK - add_shopping_list Function
+    # add_shopping_list("apple")
+    # add_shopping_list("steak")
+    # add_shopping_list("beef")
+    # add_shopping_list("mustard")
+    # #CHECK - remove_item Function
+    # remove_item("apple")
+    # #CHECK - replace_item Function
+    # replace_item("mustard", "ketchup")
 
-	print shopping_list
+    choice = menu_choice()
+    # User wants to show current list
+    while True: 
+        if choice == 0:
+            
+            choice = menu_choice()
+        if choice == 1:
+            print "Current List", shopping_list
+            choice = 0
+        elif choice == 2:
+            item_to_add = raw_input("What item would you like to add to your shopping list?")
+            add_shopping_list(item_to_add)
+            print "Current List", shopping_list
+            choice = 0
+        elif choice == 3:
+            item_to_remove = raw_input("What item would you like to remove from your shopping list?")
+            remove_item(item_to_remove)
+            print "Current List", shopping_list
+            choice = 0
+        elif choice == 4:
+            print "Bye!"
+            keepProgramRunning = False
+        else: 
+            print "Please choose 0,1,2 or 3"
+            print "\n"
 #Required for MAIN program 
 if __name__ == '__main__':
 	shopping_time()
-"""
-
-#EXERCISE 3 --------------------------------------------------------------
-prime_list = [ ]
-
-def primes():
-    yield 2
-    n = 2
-    while True:
-        n + =1
-        for p in primes():
-            if (n % p) == 0:
-                prime_list.add(n)
-        else:
-            yield n
-
-print primes(4)
-
