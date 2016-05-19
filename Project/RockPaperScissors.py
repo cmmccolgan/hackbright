@@ -51,7 +51,7 @@ while 1:
         print "You Lose!! My Scissors sliced your Paper."
         v = v+1
     #SCISSORS/ROCK
-    elif user == 's' and py == 'r':
+    elif user == 's' and py cd== 'r':
         print "You Lose!! My Rock pummeled your Scissor."
         v = v+1
     
